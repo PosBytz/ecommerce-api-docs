@@ -1,0 +1,37 @@
+---
+id: carts-controller-delete-cart
+title: "CartsController_deleteCart"
+description: "CartsController_deleteCart"
+sidebar_label: CartsController_deleteCart
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"CartsController_deleteCart","parameters":[{"name":"cartId","required":true,"in":"query","schema":{}}],"responses":{"200":{"description":"Success"},"404":{"description":"Cart not found error response","content":{"application/json":{"example":"{\"statusCode\":404,\"message\":\"cart not found\",\"error\":\"Not Found\"}"}}}},"tags":["Carts"],"security":[{"oauth2":["carts:read","carts:write"]}],"description":"CartsController_deleteCart","method":"delete","path":"/v1/carts","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"authorizationCode":{"authorizationUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/authorize","tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["countries:read","merchants:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","order:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"The PosBytz E-Commerce API description","version":"1.0","contact":{}},"postman":{"name":"Carts Controller delete Cart","description":{"type":"text/plain"},"url":{"path":["v1","carts"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"key":"cartId","value":""}],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"DELETE","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "delete api-method"
+info_path: docs/pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## CartsController_deleteCart
+
+
+
+CartsController_deleteCart
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"cartId","required":true,"in":"query","schema":{}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success
+
+</div><div></div></TabItem><TabItem label={"404"} value={"404"}><div>
+
+Cart not found error response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\"statusCode\":404,\"message\":\"cart not found\",\"error\":\"Not Found\"}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

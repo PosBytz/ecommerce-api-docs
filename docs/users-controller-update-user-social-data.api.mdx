@@ -1,0 +1,33 @@
+---
+id: users-controller-update-user-social-data
+title: "UsersController_updateUserSocialData"
+description: "UsersController_updateUserSocialData"
+sidebar_label: UsersController_updateUserSocialData
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"UsersController_updateUserSocialData","parameters":[{"name":"platform","required":true,"in":"path","schema":{"type":"string"}}],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":"{\"statusCode\":200,\"data\":{\"_id\":\"632c78d94bdbb11808d5bf32\",\"email\":{\"id\":\"harish@bytize.in\",\"token\":\"68fc2fc55b33c76048c00ea826e36d483edadd5d0db6ffc70921b999db3a50ce\",\"verified\":true},\"mobile\":{\"code\":\"+91\",\"number\":\"9962794004\",\"verified\":false},\"createdAt\":\"2022-09-22T15:01:09.098Z\",\"deletedAt\":null,\"addresses\":[],\"otp\":{\"code\":929664,\"createdAt\":\"2022-09-22T15:01:45.699Z\"},\"social\":{\"facebook\":{\"name\":\"Harish Mohan\",\"dob\":\"1993-07-05\",\"gender\":\"Male\"}}}}"}}}},"tags":["Users"],"security":[{"oauth2":["users:read","users:write"]}],"description":"UsersController_updateUserSocialData","method":"patch","path":"/v1/users/social/{platform}","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"authorizationCode":{"authorizationUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/authorize","tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["countries:read","merchants:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","order:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"The PosBytz E-Commerce API description","version":"1.0","contact":{}},"postman":{"name":"Users Controller update User Social Data","description":{"type":"text/plain"},"url":{"path":["v1","users","social",":platform"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"type":"any","value":"","key":"platform"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"PATCH","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "patch api-method"
+info_path: docs/pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## UsersController_updateUserSocialData
+
+
+
+UsersController_updateUserSocialData
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"platform","required":true,"in":"path","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\"statusCode\":200,\"data\":{\"_id\":\"632c78d94bdbb11808d5bf32\",\"email\":{\"id\":\"harish@bytize.in\",\"token\":\"68fc2fc55b33c76048c00ea826e36d483edadd5d0db6ffc70921b999db3a50ce\",\"verified\":true},\"mobile\":{\"code\":\"+91\",\"number\":\"9962794004\",\"verified\":false},\"createdAt\":\"2022-09-22T15:01:09.098Z\",\"deletedAt\":null,\"addresses\":[],\"otp\":{\"code\":929664,\"createdAt\":\"2022-09-22T15:01:45.699Z\"},\"social\":{\"facebook\":{\"name\":\"Harish Mohan\",\"dob\":\"1993-07-05\",\"gender\":\"Male\"}}}}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

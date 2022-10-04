@@ -1,0 +1,33 @@
+---
+id: countries-controller-get-cities
+title: "CountriesController_getCities"
+description: "CountriesController_getCities"
+sidebar_label: CountriesController_getCities
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"CountriesController_getCities","parameters":[{"name":"search","required":false,"in":"query","schema":{"type":"string"}},{"name":"stateCode","required":true,"in":"path","example":"TN","schema":{}},{"name":"countryCode","required":true,"in":"path","example":"IN","schema":{}}],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":"{\"statusCode\":200,\"data\":[{\"name\":\"Chennai\",\"countryCode\":\"IN\",\"stateCode\":\"TN\",\"latitude\":\"13.08784000\",\"longitude\":\"80.27847000\"}]}"}}}},"tags":["Countries"],"security":[{"oauth2":["countries:read"]}],"description":"CountriesController_getCities","method":"get","path":"/v1/countries/{countryCode}/states/{stateCode}/cities","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"authorizationCode":{"authorizationUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/authorize","tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["countries:read","merchants:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","order:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"The PosBytz E-Commerce API description","version":"1.0","contact":{}},"postman":{"name":"Countries Controller get Cities","description":{"type":"text/plain"},"url":{"path":["v1","countries",":countryCode","states",":stateCode","cities"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"key":"search","value":""}],"variable":[{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"type":"any","value":"","key":"stateCode"},{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"type":"any","value":"","key":"countryCode"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "get api-method"
+info_path: docs/pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## CountriesController_getCities
+
+
+
+CountriesController_getCities
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"stateCode","required":true,"in":"path","example":"TN","schema":{}}}></ParamsItem><ParamsItem className={"paramsItem"} param={{"name":"countryCode","required":true,"in":"path","example":"IN","schema":{}}}></ParamsItem></ul></div></details><details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"search","required":false,"in":"query","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\"statusCode\":200,\"data\":[{\"name\":\"Chennai\",\"countryCode\":\"IN\",\"stateCode\":\"TN\",\"latitude\":\"13.08784000\",\"longitude\":\"80.27847000\"}]}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

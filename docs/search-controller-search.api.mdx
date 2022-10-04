@@ -1,0 +1,33 @@
+---
+id: search-controller-search
+title: "SearchController_search"
+description: "SearchController_search"
+sidebar_label: SearchController_search
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"SearchController_search","parameters":[{"name":"q","required":true,"in":"query","schema":{"type":"string"}}],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":"{\"statusCode\":200,\"data\":{\"categories\":[{\"_id\":34259,\"imgUrl\":\"\",\"name\":\"Pasta\",\"slug\":\"pasta\",\"type\":\"category\"}],\"items\":[{\"_id\":352183,\"name\":\"Tomato Basil Penne Pasta\",\"slug\":\"tomato-basil-penne-pasta\",\"type\":\"item\",\"attributesGroup\":[]},{\"_id\":352184,\"name\":\"Creamy Garlic Penne Pasta\",\"slug\":\"creamy-garlic-penne-pasta\",\"type\":\"item\",\"attributesGroup\":[]}]}}"}}}},"tags":["Search"],"security":[{"oauth2":["search:read"]}],"description":"SearchController_search","method":"get","path":"/v1/search","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"authorizationCode":{"authorizationUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/authorize","tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["countries:read","merchants:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","order:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"The PosBytz E-Commerce API description","version":"1.0","contact":{}},"postman":{"name":"Search Controller search","description":{"type":"text/plain"},"url":{"path":["v1","search"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"key":"q","value":""}],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "get api-method"
+info_path: docs/pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## SearchController_search
+
+
+
+SearchController_search
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"q","required":true,"in":"query","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\"statusCode\":200,\"data\":{\"categories\":[{\"_id\":34259,\"imgUrl\":\"\",\"name\":\"Pasta\",\"slug\":\"pasta\",\"type\":\"category\"}],\"items\":[{\"_id\":352183,\"name\":\"Tomato Basil Penne Pasta\",\"slug\":\"tomato-basil-penne-pasta\",\"type\":\"item\",\"attributesGroup\":[]},{\"_id\":352184,\"name\":\"Creamy Garlic Penne Pasta\",\"slug\":\"creamy-garlic-penne-pasta\",\"type\":\"item\",\"attributesGroup\":[]}]}}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      
