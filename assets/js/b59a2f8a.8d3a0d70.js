@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecommerce_api_docs=self.webpackChunkecommerce_api_docs||[]).push([[852],{49719:e=>{e.exports=JSON.parse('{"title":"Items","slug":"/category/items","permalink":"/category/items","navigation":{"previous":{"title":"Get Categories","permalink":"/get-categories"},"next":{"title":"Get Items","permalink":"/get-items"}}}')}}]);
