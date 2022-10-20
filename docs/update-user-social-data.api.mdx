@@ -1,0 +1,33 @@
+---
+id: update-user-social-data
+title: "Update Social Data"
+description: "This API is used to update the social media information of an user."
+sidebar_label: Update Social Data
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"updateUserSocialData","description":"This API is used to update the social media information of an user.","parameters":[{"name":"platform","required":true,"in":"path","description":"The social media platform, such as facebook.","schema":{"type":"string"}}],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":{"statusCode":200,"data":{"_id":"632c78d94bdbb11808d5bf32","email":{"id":"harish@bytize.in","token":"68fc2fc55b33c76048c00ea826e36d483edadd5d0db6ffc70921b999db3a50ce","verified":true},"mobile":{"code":"+91","number":"9962794004","verified":false},"createdAt":"2022-09-22T15:01:09.098Z","deletedAt":null,"addresses":[],"otp":{"code":929664,"createdAt":"2022-09-22T15:01:45.699Z"},"social":{"facebook":{"name":"Harish Mohan","dob":"1993-07-05","gender":"Male"}}}}}}}},"tags":["Users"],"security":[{"oauth2":["users:read","users:write"]}],"method":"patch","path":"/v1/users/social/{platform}","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"clientCredentials":{"tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["store:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","orders:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"Whether you&apos;re building a custom-branded storefront or looking for ways to extend Posbytz, the following guide will help you achieve your goals.","version":"1.0","contact":{}},"postman":{"name":"Update Social Data","description":{"content":"This API is used to update the social media information of an user.","type":"text/plain"},"url":{"path":["v1","users","social",":platform"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) The social media platform, such as facebook.","type":"text/plain"},"type":"any","value":"","key":"platform"}]},"header":[{"key":"Accept","value":"application/json"}],"method":"PATCH","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "patch api-method"
+info_path: pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Update Social Data
+
+
+
+This API is used to update the social media information of an user.
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Path Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"platform","required":true,"in":"path","description":"The social media platform, such as facebook.","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"statusCode\": 200,\n  \"data\": {\n    \"_id\": \"632c78d94bdbb11808d5bf32\",\n    \"email\": {\n      \"id\": \"harish@bytize.in\",\n      \"token\": \"68fc2fc55b33c76048c00ea826e36d483edadd5d0db6ffc70921b999db3a50ce\",\n      \"verified\": true\n    },\n    \"mobile\": {\n      \"code\": \"+91\",\n      \"number\": \"9962794004\",\n      \"verified\": false\n    },\n    \"createdAt\": \"2022-09-22T15:01:09.098Z\",\n    \"deletedAt\": null,\n    \"addresses\": [],\n    \"otp\": {\n      \"code\": 929664,\n      \"createdAt\": \"2022-09-22T15:01:45.699Z\"\n    },\n    \"social\": {\n      \"facebook\": {\n        \"name\": \"Harish Mohan\",\n        \"dob\": \"1993-07-05\",\n        \"gender\": \"Male\"\n      }\n    }\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      

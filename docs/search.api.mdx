@@ -1,0 +1,33 @@
+---
+id: search
+title: "Search"
+description: "This API provide enhanced search functionality in the store."
+sidebar_label: Search
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"search","description":"This API provide enhanced search functionality in the store.","parameters":[{"name":"q","required":true,"in":"query","description":"The query string to be searched for in the store.","schema":{"type":"string"}}],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":{"statusCode":200,"data":{"categories":[{"_id":34259,"imgUrl":"","name":"Pasta","slug":"pasta","type":"category"}],"items":[{"_id":352183,"name":"Tomato Basil Penne Pasta","slug":"tomato-basil-penne-pasta","type":"item","attributesGroup":[]},{"_id":352184,"name":"Creamy Garlic Penne Pasta","slug":"creamy-garlic-penne-pasta","type":"item","attributesGroup":[]}]}}}}}},"tags":["Search"],"security":[{"oauth2":["search:read"]}],"method":"get","path":"/v1/search","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"clientCredentials":{"tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["store:read","categories:read","items:read","users:read","users:write","carts:read","carts:write","orders:read","orders:write","search:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"Whether you&apos;re building a custom-branded storefront or looking for ways to extend Posbytz, the following guide will help you achieve your goals.","version":"1.0","contact":{}},"postman":{"name":"Search","description":{"content":"This API provide enhanced search functionality in the store.","type":"text/plain"},"url":{"path":["v1","search"],"host":["{{baseUrl}}"],"query":[{"disabled":false,"description":{"content":"(Required) The query string to be searched for in the store.","type":"text/plain"},"key":"q","value":""}],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"GET","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "get api-method"
+info_path: pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Search
+
+
+
+This API provide enhanced search functionality in the store.
+
+<details style={{"marginBottom":"1rem"}} data-collapsed={false} open={true}><summary style={{}}><strong>Query Parameters</strong></summary><div><ul><ParamsItem className={"paramsItem"} param={{"name":"q","required":true,"in":"query","description":"The query string to be searched for in the store.","schema":{"type":"string"}}}></ParamsItem></ul></div></details><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"statusCode\": 200,\n  \"data\": {\n    \"categories\": [\n      {\n        \"_id\": 34259,\n        \"imgUrl\": \"\",\n        \"name\": \"Pasta\",\n        \"slug\": \"pasta\",\n        \"type\": \"category\"\n      }\n    ],\n    \"items\": [\n      {\n        \"_id\": 352183,\n        \"name\": \"Tomato Basil Penne Pasta\",\n        \"slug\": \"tomato-basil-penne-pasta\",\n        \"type\": \"item\",\n        \"attributesGroup\": []\n      },\n      {\n        \"_id\": 352184,\n        \"name\": \"Creamy Garlic Penne Pasta\",\n        \"slug\": \"creamy-garlic-penne-pasta\",\n        \"type\": \"item\",\n        \"attributesGroup\": []\n      }\n    ]\n  }\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      
