@@ -1,0 +1,33 @@
+---
+id: delete-user
+title: "Delete User"
+description: "This API is used to delete an existing user."
+sidebar_label: Delete User
+hide_title: true
+hide_table_of_contents: true
+api: {"operationId":"deleteUser","description":"This API is used to delete an existing user.","parameters":[],"responses":{"200":{"description":"Success response","content":{"application/json":{"example":{"statusCode":200}}}}},"tags":["User"],"security":[{"oauth2":["user:read","user:write"]}],"method":"delete","path":"/ecommerce/v1/user","servers":[],"securitySchemes":{"oauth2":{"type":"oauth2","flows":{"clientCredentials":{"tokenUrl":"https://gateway-api.smartbytz.com/ecommerce/oauth2/token","scopes":["country:read","store:read","category:read","item:read","user:read","user:write","cart:read","cart:write","order:read","order:write","search:read","reviews: read","reviews: write","brand:read"]}}}},"info":{"title":"PosBytz E-Commerce API","description":"Whether you&apos;re building a custom-branded storefront or looking for ways to extend Posbytz, the following guide will help you achieve your goals.","version":"1.0","contact":{}},"postman":{"name":"Delete User","description":{"content":"This API is used to delete an existing user.","type":"text/plain"},"url":{"path":["ecommerce","v1","user"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Accept","value":"application/json"}],"method":"DELETE","auth":{"type":"oauth2","oauth2":[]}}}
+sidebar_class_name: "delete api-method"
+info_path: pos-bytz-e-commerce-api
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem"
+import SchemaTabs from "@theme/SchemaTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import TabItem from "@theme/TabItem";
+
+## Delete User
+
+
+
+This API is used to delete an existing user.
+
+<div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Success response
+
+</div><div><MimeTabs groupId={"mime-type"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs groupId={"schema-tabs"}><TabItem label={"Example"} value={"Example"}><ResponseSamples responseExample={"{\n  \"statusCode\": 200\n}"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div>
+      
