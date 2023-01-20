@@ -1,1 +1,0 @@
-(self.webpackChunkecommerce_api_docs=self.webpackChunkecommerce_api_docs||[]).push([[893],{44616:()=>{},42480:()=>{}}]);
