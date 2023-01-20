@@ -8,11 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'PosBytz E-commerce',
   tagline: 'API Documentation',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://posbytz.github.io',
+  baseUrl: '/ecommerce-api-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -132,7 +133,7 @@ const config = {
         docsPluginId: 'classic',
         config: {
           ecommerce: {
-            specPath: 'https://integrations-ecommerce.smartbytz.com/api-json',
+            specPath: 'https://integrations-ecommerce.posbytz.com/api-json',
             outputDir: 'docs',
             sidebarOptions: {
               groupPathsBy: 'tag',
