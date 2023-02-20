@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecommerce_api_docs=self.webpackChunkecommerce_api_docs||[]).push([[7362],{44685:e=>{e.exports=JSON.parse('{"title":"User","slug":"/category/user","permalink":"/category/user","navigation":{"previous":{"title":"Forgot password","permalink":"/forgot-password"},"next":{"title":"Create Address","permalink":"/create-address"}}}')}}]);
