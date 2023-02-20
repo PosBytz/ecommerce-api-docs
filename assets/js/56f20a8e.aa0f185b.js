@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkecommerce_api_docs=self.webpackChunkecommerce_api_docs||[]).push([[7378],{88352:e=>{e.exports=JSON.parse('{"title":"Auth","slug":"/category/auth","permalink":"/category/auth","navigation":{"previous":{"title":"Remove Item","permalink":"/remove-item"},"next":{"title":"Customer Signup","permalink":"/customer-signup"}}}')}}]);
