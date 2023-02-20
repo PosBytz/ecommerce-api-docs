@@ -2,10 +2,34 @@
   display: flex;
   align-items: center;
   padding: 2rem 0;
+  padding-bottom: 48px;
   width: 100%;
 }
 
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+.feature_title {
+  font-weight: 600;
+  font-size: 32px;
+  padding: 20px 0px;
+  color: rgb(53, 53, 58);
+}
+
+@media screen and (max-width: 996px) {
+  .feature_title {
+    padding: 20px 16px;
+    text-align: center;
+    font-size: 28px;
+  }
+}
+
+[data-theme="dark"] .feature_title {
+  color: white;
+}
+
+[data-theme="light"] .section_background {
+  background-color: #f6f6fa;
 }

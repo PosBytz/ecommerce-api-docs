@@ -6,10 +6,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'PosBytz E-commerce',
+  title: 'Headless Commerce | PosBytz',
   tagline: 'API Documentation',
   url: 'https://posbytz.github.io',
-  baseUrl: '/ecommerce-api-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -61,62 +61,80 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'PosBytz E-commerce',
+        title: 'PosBytz Headless Commerce',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
-        // items: [
-        //   {
-        //     href: 'https://github.com/facebook/docusaurus',
-        //     label: 'GitHub',
-        //     position: 'right',
-        //   },
-        // ],
+        items: [
+          {
+            href: 'https://github.com/posbytz/ecommerce-nuxt-demo',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: '/ecommerce-api-docs',
+            label: 'Api Docs',
+            position: 'right',
+          },
+        ],
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Linkedin',
-        //         href: 'https://www.linkedin.com/in/posbytz-inc-05a909161/',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/posbytz',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         href: 'https://posbytz.com/blog/',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
-        //     ],
-        //   },
-        // ],
+        links: [
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Blog',
+                href: 'https://posbytz.com/blog/',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/posbytz',
+              },
+            ],
+          },
+          {
+            title: 'Social',
+            items: [
+              {
+                label: 'Facebook',
+                href: 'https://www.facebook.com/posbytz/',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/posbytz',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/posbytz-inc-05a909161/',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/posbytz/?hl=en',
+              },
+            ],
+          },
+          {
+            title: 'Support',
+            items: [
+              {
+                label: 'Help Center',
+                href: 'https://help.posbytz.com/',
+              },
+              {
+                label: 'Status Monitor',
+                href: 'https://status.posbytz.com/en/',
+              },
+              {
+                label: 'Contact Support',
+                href: 'https://posbytz.com/contact-us/contact-support/',
+              },
+            ],
+          },
+
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} Bytize, Inc. Built with Docusaurus.`,
       },
       prism: {

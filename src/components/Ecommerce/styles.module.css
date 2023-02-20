@@ -1,0 +1,62 @@
+.ecommerce_title {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 4px 0px;
+  color: rgb(53, 53, 58);
+}
+
+.ecommerce_description {
+  color: #45494e;
+  font-size: 16px;
+}
+
+.ecommerce_col_left {
+  padding-right: 16px;
+}
+
+.ecommerce_col_right {
+  padding-left: 16px;
+}
+
+.ecommerce_bulletpoints {
+  color: #000;
+  font-size: 16px;
+  padding-top: 4px;
+}
+
+.ecommmerce_buttons {
+  padding: 8px 24px;
+  margin-top: 12px;
+}
+
+ul {
+  list-style-type: "✔";
+}
+
+li {
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 996px) {
+  .header_button_media {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  }
+
+  .ecommerce_title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
+
+[data-theme="dark"] .ecommerce_description {
+  color: white;
+}
+
+[data-theme="dark"] .ecommerce_title {
+  color: white;
+}

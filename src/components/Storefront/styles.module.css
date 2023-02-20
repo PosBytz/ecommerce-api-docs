@@ -1,0 +1,58 @@
+.storefront_heading {
+  font-weight: 600;
+  font-size: 32px;
+  color: rgb(53, 53, 58);
+}
+
+.storefront_description {
+  color: #45494e;
+  font-size: 18px;
+}
+
+.storefront_button {
+  padding: 12px 20px;
+  margin-right: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.button_signup {
+  padding: 12px 24px;
+  border-radius: 45px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 996px) {
+  .storefront_heading {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .storefront_button {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-bottom: 16px;
+  }
+
+  .button_signup {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  }
+}
+
+[data-theme="dark"] .storefront_heading {
+  color: white;
+}
+
+[data-theme="dark"] .storefront_description {
+  color: white;
+}

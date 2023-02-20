@@ -1,0 +1,35 @@
+.intro_main {
+  align-items: center;
+  justify-content: center;
+}
+
+.intro_heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  color: rgb(53, 53, 58);
+}
+
+.intro_description {
+  text-align: center;
+  color: #54595f;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 996px) {
+  .intro_heading {
+    font-size: 28px;
+  }
+}
+
+[data-theme="dark"] .intro_description {
+  color: white;
+}
+
+[data-theme="dark"] .intro_heading {
+  color: white;
+}
+
+[data-theme="light"] .section_main {
+  background-color: #f6f6fa;
+}
