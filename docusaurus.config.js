@@ -9,7 +9,7 @@ const config = {
   title: 'Headless Commerce | PosBytz',
   tagline: 'API Documentation',
   url: 'https://posbytz.github.io',
-  baseUrl: '/',
+  baseUrl: '/ecommerce-api-docs',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -73,7 +73,7 @@ const config = {
             position: 'right',
           },
           {
-            href: '/ecommerce-api-docs',
+            href: '/ecommerce-api-docs/docs',
             label: 'Api Docs',
             position: 'right',
           },

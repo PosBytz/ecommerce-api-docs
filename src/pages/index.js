@@ -22,8 +22,8 @@ function HomepageHeader() {
               <p className={clsx('hero__subtitle', styles.header_subtitle)}>Streamline your ecommerce operations with our customizable headless solution.</p>
               <Link
                 className={clsx('button button--primary button--lg button--outline', styles.header_button)}
-                to="/ecommerce-api-docs">
-                Get Started
+                to="/ecommerce-api-docs/docs">
+                View Documentation
               </Link>
             </div>
           </div>
