@@ -4,19 +4,19 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'React Js',
+    title: 'React JS',
     Svg: require('@site/static/img/react.svg').default,
   },
   {
-    title: 'Vue Js',
+    title: 'Vue JS',
     Svg: require('@site/static/img/vue.svg').default,
   },
   {
-    title: 'Nuxt Js',
+    title: 'Nuxt JS',
     Svg: require('@site/static/img/nuxt.svg').default,
   },
   {
-    title: 'Next Js',
+    title: 'Next JS',
     Svg: require('@site/static/img/next.svg').default,
   },
 ];
