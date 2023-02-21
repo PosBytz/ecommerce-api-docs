@@ -9,8 +9,8 @@ export default function Ecommerce() {
             <div className={clsx('container padding-vert--lg',)}>
                 <div className='row'>
                     <div className={clsx('col col--6', styles.ecommerce_main)}>
-                        <h2 className={clsx('', styles.ecommerce_title)}>Why Choose Our Headless Ecommerce Solution?</h2>
-                        <p className={clsx('hero__subtitle', styles.ecommerce_description)}>Our headless ecommerce solution is built to give you the flexibility you need to create a unique ecommerce experience. With our customizable API-driven architecture, you can integrate any front-end platform and keep your ecommerce data separate from your presentation layer.</p>
+                        <h2 className={clsx('', styles.ecommerce_title)}>Why Choose Our Headless Commerce Software?</h2>
+                        <p className={clsx('hero__subtitle', styles.ecommerce_description)}>Our ecommerce software is built to give you the flexibility you need to create a unique ecommerce experience. With our customizable API-driven architecture, you can integrate any front-end platform and keep your ecommerce data separate from your presentation layer.</p>
                     </div>
                     <div className='col col--6'>
                         <h1 className={clsx('', styles.ecommerce_title)}>How Our Headless Ecommerce Solution Can Benefit You</h1>

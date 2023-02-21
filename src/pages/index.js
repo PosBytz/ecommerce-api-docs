@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className='row'>
           <div className={clsx('col col--6 padding-vert--lg', styles.header_main)}>
             <div>
-              <h1 className={clsx('hero__title', styles.header_title)}>Unlock the Power of Headless Ecommerce</h1>
+              <h1 className={clsx('hero__title', styles.header_title)}>Unlock the Power of Headless Commerce</h1>
               <p className={clsx('hero__subtitle', styles.header_subtitle)}>Streamline your ecommerce operations with our customizable headless solution.</p>
               <Link
                 className={clsx('button button--primary button--lg button--outline', styles.header_button)}
