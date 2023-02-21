@@ -10,17 +10,16 @@ export default function Storefront() {
                 <div className='row'>
                     <div className='col col--6 padding-bottom--lg'>
                         <h2 className={clsx('', styles.storefront_heading)}>Ecommerce Storefront Demo</h2>
-                        <p className={clsx('padding-bottom--md', styles.storefront_description)}>An open-source storefront in Vue.js with Nuxt.js. Built for Headless Commerce, using a modern stack with Posbytz and Tailwind CSS.</p>
+                        <p className={clsx('padding-bottom--md', styles.storefront_description)}>An open-source storefront in Vue.js with Nuxt.js. Built for Headless ecommerce, using a modern stack with Posbytz and Tailwind CSS.</p>
                         <div>
                             <Link href='https://github.com/posbytz/ecommerce-nuxt-demo' className={clsx('button button--secondary', styles.storefront_button)}>Nuxt 3 Storefront Repo</Link>
                             <Link href='https://ecommerce-demo.posbytz.com/' className={clsx('button button--primary', styles.storefront_button)}>View Storefront Demo</Link>
                         </div>
                     </div>
                     <div className='col col--6'>
-                        <h2 className={clsx('', styles.storefront_heading)}>Start selling online for free</h2>
-                        <p className={clsx('padding-bottom--md', styles.storefront_description)}>A better experience for your customers, fewer headaches
-                            for your team. You’ll be set up in minutes.</p>
-                        <Link href='https://app.posbytz.com/account/register' className={clsx('button button--primary', styles.button_signup)}>Sign Up for free</Link>
+                        <h2 className={clsx('', styles.storefront_heading)}>Join our waiting list</h2>
+                        <p className={clsx('padding-bottom--md', styles.storefront_description)}>Our team will get in touch with you to setup headless ecommerce using PosBytz admin</p>
+                        <Link href='https://getwaitlist.com/waitlist/5224' className={clsx('button button--primary', styles.button_signup)}>Join Now</Link>
                     </div>
                 </div>
             </div>
